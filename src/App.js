@@ -1,22 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Button from '@mui/material/Button';
 
 function App() {
+  const handleButtonClick = (buttonName) => {
+    alert(`${buttonName} button clicked!`);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Choreo AWS Test</h1>
+        <div>
+        <Button variant="outlined" color="primary" onClick={() => handleButtonClick("Button 1")}>
+                Create component
+          </Button>
+        </div>
       </header>
     </div>
   );

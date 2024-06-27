@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Choreo AWS Test</h1>
+        <h1>SaaS AWS Test</h1>
         <div>
         <Button variant="outlined" color="primary" onClick={() => handleButtonClick("Button 1")}>
                 Create component
